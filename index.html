@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="backjackWrapper">
+        <div class="step1">
+            <h2>You must be <span>18+</span> to play this game!</h2>
+            <div>
+                <input type="text" id="age" placeholder="Please enter your age!">
+                <button id="submitAge">START GAME</button>
+            </div>
+        </div>
+        <div class="step2">
+            <h2>Welcome to BlackJack</h2>
+            <h3 id="message-el">Want to play a round?</h3>
+            <div class="cards-total-el" style="display: none;">
+                <p>Cards: <span id="cards-el"> </span> </p>
+                <p>Sum: <span id="sum-el"> </span> </p>
+                <p> <span id="player-el"> </span> </p>
+            </div>
+            <div class="stepButtons">
+                <button onclick="startGame();" class="startGame"> START GAME </button>
+                <button onclick="newCard();" class="newCard" style="display: none;"> NEW CARD </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

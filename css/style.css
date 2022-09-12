@@ -1,0 +1,132 @@
+* {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p,
+li,
+span {
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    position: relative;
+    background-image: url('../img/background.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+body:before {
+    position: absolute;
+    content: '';
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.backjackWrapper {
+    position: relative;
+}
+
+.backjackWrapper h2 {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 44px;
+    padding-bottom: 34px;
+}
+
+.backjackWrapper h2 span {
+    color: #ffc107;
+}
+
+.step1>div {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.backjackWrapper input {
+    padding: 14px 20px;
+    background: #e3f2fd;
+    border: 0;
+    width: 100%;
+    border: 2px solid transparent;
+}
+
+.backjackWrapper input:focus {
+    outline: none;
+    border-color: goldenrod;
+}
+
+.backjackWrapper button {
+    background: goldenrod;
+    color: #fff;
+    border: 0;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+
+.backjackWrapper button:hover {
+    background: #016f32;
+}
+
+.step2 {
+    display: none;
+}
+
+h3#message-el {
+    font-size: 24px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.step2 .cards-total-el>p {
+    color: goldenrod;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    border: 1px solid goldenrod;
+}
+
+.step2 .cards-total-el>p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+span#cards-el,
+span#sum-el {
+    color: #fff;
+}
+
+.stepButtons {
+    display: flex;
+    grid-gap: 10px;
+}
+
+.stepButtons>button {
+    margin-top: 10px;
+}
